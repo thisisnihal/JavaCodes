@@ -6,6 +6,6 @@ https://dev.java/learn/classes-objects/nested-classes
 
 
 ## when inner class is non static
-`OuterClass outerClass = new OuterClass();`
+`OuterClass outerClassObj = new OuterClass();`
 
-`OuterClass.InnerClass innerObject = outerObject.new InnerClass();`
+`OuterClass.InnerClass innerObject = outerClassObj.new InnerClass();`

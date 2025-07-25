@@ -10,7 +10,7 @@ public class Main {
         // type its Week
 
         // this constructor is not public or protected, only private or default. 
-        // why? we do not want to create new objects because this not the enum concept, thats why
+        // why? we do not want to create new objects because this's not the enum concept, thats why
         Week () {
             System.out.println("Constructor called for "+ this);
         }
