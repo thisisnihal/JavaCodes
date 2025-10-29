@@ -4,7 +4,7 @@ enum Color {
     RED, GREEN, BLUE;
 }
 
-public class Example {
+public class EnumExample {
     public static void main(String[] args) {
         // Using values() method to iterate through enum constants
         System.out.println("Colors:");

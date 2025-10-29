@@ -1,8 +1,8 @@
-package dsa;
+package dsa.heap;
 
 import java.util.ArrayList;
 
-public class HeapsExample {
+public class HeapImplementation {
     public static void main(String[] args) throws Exception {
         Heap<Integer> heap = new Heap<>();
 
@@ -36,7 +36,7 @@ class Heap<T extends Comparable<T>> {
     }
 
     private int parent(int index) {
-        return (index - 1) / 2;
+        return (index - 1) / 2;     // 1-based indexing, not 0
     }
 
     private int left(int index) {
@@ -57,7 +57,7 @@ class Heap<T extends Comparable<T>> {
         if (index == 0)
             return;
         int p = parent(index);
-        if (list.get(index).compareTo(list.get(p)) < 0) {
+        if (list.get(index).compareTo(list.get(p)) < 0) {   // current is less than parent then swap and upheap on parent
             swap(index, p);
             upheap(p);
         }
